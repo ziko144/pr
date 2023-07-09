@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 500px;
+            width:100%;
+            background-color: #ccc;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+        }
+        .box:nth-child(1){
+            flex-grow: 1;
+            background-image: url(Kevin.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .box:nth-child(2){
+            flex-shrink: 0;
+            background-image: url(nat.jpg);
+            width: 200px;
+            height: 200px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .box:nth-child(3){
+            flex-shrink: 0;
+            background-image: url(z.jpg);
+            width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
